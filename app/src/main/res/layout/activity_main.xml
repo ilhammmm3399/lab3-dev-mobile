@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.lab3_ilhammmm339.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nom &amp; Prénom"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/fullNameEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex : BAZAR ILHAM"
+                android:inputType="textPersonName"
+                android:autofillHints="name"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/emailEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex : ilham@gmail.com"
+                android:inputType="textEmailAddress"
+                android:autofillHints="emailAddress"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Téléphone"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/phoneEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Ex : 0600000000"
+                android:inputType="phone"
+                android:autofillHints="phone"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adresse"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="XYZ"
+                android:inputType="textPostalAddress"
+                android:autofillHints="postalAddress"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ville"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginTop="16dp"/>
+
+            <EditText
+                android:id="@+id/cityEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="RABAT"
+                android:inputType="textCapWords"
+                android:autofillHints="postalAddress"/>
+
+            <Button
+                android:id="@+id/submitFormButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Envoyer"
+                android:layout_marginTop="32dp"
+                android:backgroundTint="@color/colorAccent"/>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
